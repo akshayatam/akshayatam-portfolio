@@ -1,0 +1,14 @@
+- [x] Add profile photos to Home and About
+- [x] Add resume download and copy-email controls
+- [x] Add journal/blog optional imagery and journal lightbox
+- [x] Add centralized open-source contributions and About cards
+- [x] Replace technology abbreviations with Iconify logos
+- [x] Add page, theme, and reduced-motion transitions
+- [x] Add themed syntax highlighting and code copy controls
+- [x] Validate desktop, tablet, mobile, themes, keyboard, media, and controls
+- [x] Fix journal preview and lightbox containment
+- [x] Make the About technology carousel icon-only
+- [x] Add unique required Blog covers and reusable research references
+- [x] Refine 404, favicon metadata, Privacy route, and footer
+- [x] Polish tablet/mobile navigation and complete responsive QA
+- [x] Production QA pass: links, routes, responsiveness, a11y contrast, tech-stack grid, contact form states, SEO check

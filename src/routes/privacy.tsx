@@ -1,0 +1,6 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PageIntro } from "@/components/portfolio/core";
+
+export const Route=createFileRoute("/privacy")({head:()=>({meta:[{title:"Privacy — Akshay Atam"},{name:"description",content:"A concise privacy notice for the Akshay Atam portfolio website."},{property:"og:title",content:"Privacy — Akshay Atam"},{property:"og:description",content:"Privacy information for the Akshay Atam portfolio website."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary"}],links:[{rel:"canonical",href:"/privacy"}]}),component:Privacy});
+
+function Privacy(){return <div className="site-container pb-20"><PageIntro eyebrow="Information" title="Privacy" description="A concise overview of how this portfolio handles visitor information."/><article className="prose-custom py-12"><h2>Current site</h2><p>This portfolio does not currently create visitor accounts or intentionally collect personal information. If you contact me by email, your message is handled by your email provider and mine.</p><h2>Future updates</h2><p>This notice will be updated if analytics, forms, or other services that process visitor information are added later.</p><p className="text-sm text-muted-foreground">Last updated September 13, 2026.</p></article></div>}
