@@ -37,7 +37,7 @@ function Contact(){
   };
 
   return <div className="site-container pb-20">
-    <PageIntro eyebrow="Say hello / 06" title="Contact" description="Have a thoughtful problem, a promising collaboration, or simply want to compare notes? I’d be glad to hear from you."/>
+    <PageIntro eyebrow="Say hello / 06" title="Contact" description="Have an interesting idea, a project in mind, or just want to say hello? I'd love to hear from you."/>
     <div className="grid gap-14 py-16 md:grid-cols-[.8fr_1.2fr]">
       <aside>
         <p className="font-display text-2xl">Let’s start a conversation.</p>

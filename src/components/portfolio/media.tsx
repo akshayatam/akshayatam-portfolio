@@ -1,10 +1,10 @@
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import type { ReactNode } from "react";
-import profileImage from "@/assets/profile-akshay-temp.jpg";
+import profileImage from "@/assets/profile-akshay-atam.png";
 import { cn } from "@/lib/utils";
 
 export function ProfileImage({ className, priority = false }: { className?: string; priority?: boolean }) {
-  return <img src={profileImage} alt="Temporary portrait of Akshay Atam" width={1024} height={1024} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} className={cn("profile-image", className)} />;
+  return <img src={profileImage} alt="Portrait of Akshay Atam" width={1024} height={1024} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} className={cn("profile-image", className)} />;
 }
 
 export function ContentThumbnail({ src, alt, className, width = 1400, height = 900 }: { src: string; alt: string; className?: string; width?: number; height?: number }) {
