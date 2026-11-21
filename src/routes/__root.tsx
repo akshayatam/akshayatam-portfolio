@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 import { Footer, Navbar, ThemeScript } from "@/components/portfolio/core";
+import { BackToTop } from "@/components/portfolio/back-to-top";
 import { NotFoundPage } from "@/components/portfolio/not-found";
 import { site } from "@/content/site";
 
@@ -98,6 +99,7 @@ function RootShell({ children }: { children: ReactNode }) {
       </head>
       <body>
         {children}
+        <BackToTop />
         <Scripts />
       </body>
     </html>

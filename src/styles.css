@@ -24,7 +24,7 @@
 @utility journal-date { font-family:var(--font-mono);font-size:.7rem;color:var(--muted-foreground);padding-top:.2rem; }
 @utility content-header { max-width:52rem;padding-block:5rem 3rem; & h1{font-family:var(--font-display);font-size:clamp(2.8rem,7vw,5.2rem);line-height:1;font-weight:550;letter-spacing:0} }
 @utility prose-custom { max-width:46rem;margin-inline:auto;font-size:1rem;line-height:1.85;color:var(--foreground); & h2{font-family:var(--font-display);font-size:2rem;line-height:1.15;font-weight:600;margin:3.5rem 0 1rem} & h3{font-family:var(--font-display);font-size:1.5rem;font-weight:600;margin:2.5rem 0 1rem} & p{margin-block:1.2rem} & ul{margin:1.2rem 0;padding-left:1.5rem;list-style:disc} & li{margin:.45rem 0} & blockquote{margin:2rem 0;border-left:2px solid var(--accent-mark);padding:.5rem 0 .5rem 1.5rem;font-family:var(--font-display);font-size:1.4rem;font-style:italic;color:var(--muted-foreground)} & table{width:100%;border-collapse:collapse;margin:2rem 0} & th,& td{text-align:left;padding:.75rem;border-bottom:1px solid var(--border)} & th{font-size:.75rem} @media(max-width:480px){& th,& td{padding:.5rem .35rem}} }
-@keyframes ticker{to{transform:translateX(-50%)}} @utility tech-ticker { display:flex;width:max-content;animation:ticker 32s linear infinite; &:hover{animation-play-state:paused} }
+@keyframes ticker{to{transform:translateX(-50%)}} @utility tech-ticker { display:flex;width:max-content;animation:ticker 32s linear infinite; &:hover,&:focus-within{animation-play-state:paused} }
 @keyframes page-enter{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 @utility page-transition { animation:page-enter .2s ease-out both; }
 @utility home-hero { display:grid;gap:3rem;align-items:center;min-height:74vh;padding-block:5rem;border-bottom:1px solid var(--border); @media(min-width:768px){grid-template-columns:minmax(0,1fr) minmax(14rem,20rem)} }
@@ -41,7 +41,7 @@
 @utility journal-thumb { width:100%;max-width:24rem;justify-self:center;overflow:hidden; & .lightbox-trigger{aspect-ratio:14/9} & figcaption{margin-top:.5rem;font-size:.7rem;line-height:1.5;color:var(--muted-foreground)} }
 @media(min-width:768px){.journal-entry-media{grid-template-columns:9rem minmax(0,1fr) 14rem}.journal-thumb{grid-column:3;grid-row:1;max-width:14rem}}
 @utility journal-detail-image { max-width:56rem;margin:0 auto 3rem; & figcaption{margin-top:.6rem;font-size:.75rem;color:var(--muted-foreground)} }
-@utility tech-icon { display:flex;width:2.5rem;height:2.5rem;flex:none;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:var(--radius);background:var(--card); & svg{width:1.45rem;height:1.45rem} }
+@utility tech-icon { display:flex;width:2.5rem;height:2.5rem;flex:none;align-items:center;justify-content:center; & svg{width:100%;height:100%} }
 @utility tech-icon-small { width:2.25rem;height:2.25rem; & svg{width:1.25rem;height:1.25rem} }
 @utility contribution-card { background:var(--background);padding:1.5rem;border:1px solid var(--border);border-radius:var(--radius); }
 @utility contribution-status { display:inline-flex;align-items:center;gap:.35rem;border:1px solid var(--border);border-radius:999px;padding:.25rem .6rem;font-family:var(--font-mono);font-size:.65rem; & svg{width:.75rem;height:.75rem} }
